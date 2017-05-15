@@ -1,0 +1,29 @@
+{
+  "name": "parkandsleep",
+  "version": "1.0.0",
+  "description": "Park and Sleep",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/start_server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACN1/PAS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FACN1/PAS/issues"
+  },
+  "homepage": "https://github.com/FACN1/PAS#readme",
+  "dependencies": {
+    "handlebars": "^4.0.8",
+    "hapi": "^16.1.1",
+    "inert": "^4.2.0",
+    "vision": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
