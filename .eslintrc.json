@@ -1,0 +1,10 @@
+{
+  "extends": "airbnb",
+  "plugins": [
+    "import"
+  ],
+  "rules": {
+    "comma-dangle": 0,
+    "linebreak-style": 0
+  }
+}
