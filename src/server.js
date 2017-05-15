@@ -1,6 +1,5 @@
 const hapi = require('hapi');
 const inert = require('inert');
-const path = require('path');
 const vision = require('vision');
 const handlebars = require('handlebars');
 
@@ -16,20 +15,20 @@ server.register([inert, vision], (err) => {
   if (err) {
     throw err;
   }
-  server.route(routes);
 
   server.views({
     engines: {
       hbs: handlebars,
     },
-    relativeTo: path.join(__dirname, 'views'),
-    layoutPath: './layouts',
+    relativeTo: __dirname,
+    layoutPath: './views/layout',
     layout: 'default',
     path: './views',
-    partialsPath: './partials',
-    helpersPath: './helpers',
+    partialsPath: './views/partials',
+    helpersPath: './views/helpers',
   });
-});
 
+  server.route(routes);
+});
 
 module.exports = server;
