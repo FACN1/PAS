@@ -1,5 +1,7 @@
-const home = require('./home.js');
+const homeHandler = require('./home.js');
+const staticHandler = require('./static.js');
 
 module.exports = [
-  home
+  homeHandler,
+  staticHandler,
 ];
