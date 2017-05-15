@@ -3,5 +3,5 @@ module.exports = {
   path: '/',
   handler: (request, reply) => {
     reply.view('splash');
-  }
+  },
 };
