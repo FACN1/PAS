@@ -1,7 +1,6 @@
 /* eslint-env browser */
-console.log('OY');
 
-setTimeout(function () {
+setTimeout(() => {
   const mymap = L.map('mapid', {
     center: [32.699, 35.303],
     zoomControl: false,
