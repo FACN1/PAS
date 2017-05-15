@@ -9,7 +9,7 @@ const server = new hapi.Server();
 const routes = require('./routes');
 
 server.connection({
-  port: process.env.PORT || 8000
+  port: process.env.PORT || 8000,
 });
 
 server.register([inert, vision], (err) => {
@@ -20,14 +20,14 @@ server.register([inert, vision], (err) => {
 
   server.views({
     engines: {
-      hbs: handlebars
+      hbs: handlebars,
     },
-    relativeTo: path.join(__dirname, 'handlebars'),
+    relativeTo: path.join(__dirname, 'views'),
     layoutPath: './layouts',
     layout: 'default',
     path: './views',
     partialsPath: './partials',
-    helpersPath: './helpers'
+    helpersPath: './helpers',
   });
 });
 
