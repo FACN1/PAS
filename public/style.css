@@ -72,5 +72,16 @@ body {
 /* Car Route */
 
 #mapid {
-  height: 360px;
+  height: 80%;
+  width: 100%;
+  display: flex;
+}
+
+.arrived-button {
+  text-decoration: none;
+  color: white;
+}
+
+.back-button {
+  color: white;
 }

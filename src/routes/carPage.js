@@ -1,7 +1,7 @@
 const carRouteHandler = (request, reply) => {
-  reply.view('carRoute', {
+  reply.view('car-route', {
     title: 'Private Parking',
-    address: 'ElMutran Parking',
+    tagLine: 'ElMutran Parking',
   });
 };
 
