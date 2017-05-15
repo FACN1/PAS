@@ -1,3 +1,5 @@
+const home = require('./home.js');
+
 module.exports = [
-  require('./home.js')
-]
+  home
+];
