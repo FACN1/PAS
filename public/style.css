@@ -72,16 +72,35 @@ body {
 /* Car Route */
 
 #mapid {
-  height: 80%;
+  margin-top: 3%;
+  height: 70%;
   width: 100%;
-  display: flex;
+}
+
+.splash-button-car {
+  background-color: white;
+  height: 7%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 4%;
 }
 
 .arrived-button {
   text-decoration: none;
-  color: white;
+  color: #6E9FEF;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding: 0em 1em;
+  line-height: 2em;
 }
 
 .back-button {
   color: white;
+  float: left;
+  font-size: 4rem;
+  margin-left: 1rem;
+  left: 0%;
+  bottom: 4%;
+  position: absolute;
 }
