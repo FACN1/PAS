@@ -5,5 +5,8 @@
   ],
   "rules": {
     "linebreak-style": 0
+  },
+  "globals": {
+    "L": true
   }
 }
