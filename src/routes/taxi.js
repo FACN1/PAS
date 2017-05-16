@@ -1,12 +1,12 @@
 const data = {
-  title: 'PAS',
-  tagLine: 'Park & Sleep',
+  title: 'Daher',
+  tagLine: '6098/8 Nazareth',
 };
 
 module.exports = {
   method: 'GET',
-  path: '/',
+  path: '/taxi',
   handler: (request, reply) => {
-    reply.view('splash', data);
+    reply.view('taxi', data);
   },
 };

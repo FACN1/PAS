@@ -8,7 +8,7 @@
     "start": "node ./src/start_server.js",
     "dev": "nodemon --ext js,hbs ./src/start_server.js",
     "precommit-msg": "echo 'Pre-commit checks..' && exit 0",
-    "lint": "eslint ./ --cache --ignore-pattern .gitignore"
+    "lint": "eslint ./ --ignore-pattern .gitignore"
   },
   "pre-commit": [
     "precommit-msg",
