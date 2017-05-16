@@ -10,8 +10,6 @@ body {
   max-width: 414px;
 }
 
-/* Splash Page */
-
 .app-shell {
   background: linear-gradient(#163d7d, #1b4996);
   width: 100%;
@@ -21,6 +19,17 @@ body {
   justify-content: flex-start;
   flex-direction: column;
 }
+
+/* Back Button */
+.back-button {
+  height: 10%;
+  margin: 0 0 5% 5%;
+  display: inline-block;
+  position: absolute;
+  margin-top: 155%;
+}
+
+/* Header */
 
 .header {
   width: 100%;
@@ -66,9 +75,11 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+/* Splash Page */
+
 .intro-text {
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   display: flex;
   align-self: center;
   margin-top: 10%;
@@ -113,5 +124,33 @@ body {
   width: auto;
 }
 
-
 /* Car Route */
+
+
+/* Taxi Route */
+
+.price {
+  display: flex;
+  align-self: center;
+  font-size: 3rem;
+  font-family: 'Prata', serif;
+  color: white;
+  margin-top: 15%;
+}
+
+.gett-button {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  margin-top: 10%;
+  width: 60%;
+  height: 15%;
+  background-color: white;
+  justify-content: center;
+  box-shadow: 0 0 1px 2px #848e9e;
+}
+
+.taxi-img {
+  height: 90%;
+  width: auto;
+}
