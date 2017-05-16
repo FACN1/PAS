@@ -3,7 +3,6 @@ const data = {
   tagLine: '6098/8 Nazareth',
 };
 
-
 module.exports = {
   method: 'GET',
   path: '/taxi',

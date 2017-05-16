@@ -20,15 +20,6 @@ body {
   flex-direction: column;
 }
 
-/* Back Button */
-.back-button {
-  height: 10%;
-  margin: 0 0 5% 5%;
-  display: inline-block;
-  position: absolute;
-  margin-top: 155%;
-}
-
 /* Header */
 
 .header {
@@ -73,6 +64,46 @@ body {
   color: white;
   margin-right: 5%;
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Back Button */
+.back-button {
+  height: 7%;
+  margin: 0 0 5% 5%;
+  display: inline-block;
+  position: absolute;
+  margin-top: 155%;
+}
+
+.arrow {
+  height: 100%;
+  margin-top: 40%;
+}
+
+/* Arrived Button */
+
+.arrived-button {
+  background-color: white;
+  height: 7%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3%;
+  text-decoration: none;
+  box-shadow: 0 0 1px 2px #848e9e;
+}
+
+.arrived-button:hover {
+  box-shadow: inset 0 0 1px 2px #848e9e;
+}
+
+.arrived-text {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #6E9FEF;
+  font-weight: bolder;
+  font-size: 1.75rem;
+  padding: 0em 1em;
+  line-height: 2em;
 }
 
 /* Splash Page */
@@ -158,36 +189,19 @@ body {
 
 /* Car Route */
 
-#mapid {
-  margin-top: 3%;
-  height: 70%;
-  width: 100%;
-}
-
-.splash-button-car {
+.map-container {
+  width: 85%;
+  height: 65%;
+  margin-top: 10%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
   background-color: white;
-  height: 7%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 4%;
+  box-shadow: inset 0 0 1px 2px #848e9e;
 }
 
-.arrived-button {
-  text-decoration: none;
-  color: #6E9FEF;
-  font-weight: bolder;
-  font-size: 1.5rem;
-  padding: 0em 1em;
-  line-height: 2em;
-}
-
-.back-button {
-  color: white;
-  float: left;
-  font-size: 4rem;
-  margin-left: 1rem;
-  left: 0%;
-  bottom: 4%;
-  position: absolute;
+#mapid {
+  height: 98%;
+  width: 98%;
 }

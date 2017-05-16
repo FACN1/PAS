@@ -3,7 +3,6 @@ const data = {
   tagLine: 'Park & Sleep',
 };
 
-
 module.exports = {
   method: 'GET',
   path: '/',
