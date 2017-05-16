@@ -1,5 +1,5 @@
 const data = {
-  logo: 'PAS',
+  title: 'PAS',
   tagLine: 'Park & Sleep',
 };
 

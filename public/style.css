@@ -6,6 +6,8 @@
 
 body {
   height: 100vh;
+  max-height: 736px;
+  max-width: 414px;
 }
 
 /* Splash Page */
@@ -42,7 +44,7 @@ body {
   margin: 2% 2% 0 0;
 }
 
-.logo {
+.title {
   color: white;
   margin: 5% 0% 0% 5%;
   font-family: 'Economica', sans-serif;
