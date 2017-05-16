@@ -28,6 +28,7 @@
     "handlebars": "^4.0.8",
     "hapi": "^16.1.1",
     "inert": "^4.2.0",
+    "leaflet": "^1.0.3",
     "vision": "^4.1.1"
   },
   "devDependencies": {
