@@ -1,207 +1,206 @@
-/* Setup */
+/* Set Up */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  height: 100vh;
-  max-height: 736px;
-  max-width: 414px;
+html {
+  font-size: 1px;
 }
 
 .app-shell {
-  background: linear-gradient(#163d7d, #1b4996);
-  width: 100%;
   height: 100%;
+  width: 100%;
+  background: linear-gradient(#0c052d, #211266);
+  position: absolute;
+  /*%absolute or viewport absolute or fixed*/
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   flex-direction: column;
 }
 
 /* Header */
-
 .header {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-}
-
-.header-top {
-  width: 100%;
-  display: flex;
-  align-items:flex-start;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-.phone {
-  height: 3.5rem;
-  width: auto;
-  margin: 2% 2% 0 0;
+  width: 430rem;
+  height: 100rem;
+  margin-top: 20rem;
+  position: absolute;
+  box-sizing: content-box;
+  /*border: 1px dashed white;*/
 }
 
 .title {
+  width: 300rem;
+  height: 43rem;
+  position: relative;
+  margin: 5rem 0 0 5rem;
+  font-size: 48em;
   color: white;
-  margin: 5% 0% 0% 5%;
   font-family: 'Economica', sans-serif;
-  font-size: 2.5rem;
+  font-weight:600;
 }
 
 .line-break {
-  background-color: white;
-  margin-left: 5%;
-  width: 90%;
+  width: 420rem;
   height: 1px;
+  background-color: white;
+  position: relative;
+  left: 5rem;
+  margin: 10rem 0 5rem 0;
 }
 
 .tag-line {
-  align-self: flex-end;
-  font-size: 1.5rem;
+  width: 210rem;
+  height: 43rem;
+  position: relative;
+  margin: 0 5rem 5rem 215rem;
+  font-size: 22em;
+  text-align: right;
   color: white;
-  margin-right: 5%;
   font-family: 'Roboto Condensed', sans-serif;
+  font-weight: lighter;
 }
 
-/* Back Button */
-.back-button {
-  height: 7%;
-  margin: 0 0 5% 5%;
-  display: inline-block;
+.call-button {
+  width: 55rem;
+  height: 55rem;
   position: absolute;
-  margin-top: 155%;
+  margin: -114rem 0 0 380rem;
 }
 
-.arrow {
+.call-button img {
   height: 100%;
-  margin-top: 40%;
+  width: auto;
+  border-radius: 55rem;
 }
 
-/* Arrived Button */
-
-.arrived-button {
-  background-color: white;
-  height: 7%;
+/* Welcome */
+.welcome-container {
+  width: 380rem;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 3%;
-  text-decoration: none;
-  box-shadow: 0 0 1px 2px #848e9e;
-}
-
-.arrived-button:hover {
-  box-shadow: inset 0 0 1px 2px #848e9e;
-}
-
-.arrived-text {
+  margin-top: 140rem;
+  text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
-  color: #6E9FEF;
-  font-weight: bolder;
-  font-size: 1.75rem;
-  padding: 0em 1em;
-  line-height: 2em;
 }
 
-/* Splash Page */
-
-.intro-text {
+.welcome-paragraph {
+  font-size: 22em;
   color: white;
-  font-size: 1.4rem;
-  display: flex;
-  align-self: center;
-  margin-top: 10%;
-  font-family: 'Prata', serif;
-  margin-bottom: 5%;
 }
 
+/* Splash Buttons */
 .button-container {
-  height: 55%;
-  width: 60%;
-  display: flex;
-  align-self: center;
-  flex-direction: column;
-  margin-top: 5%;
-  border: 0.5px solid white;
-  padding: 4% 4% 0 4%;
-  box-shadow: 0 0 1px 1px #848e9e;
+  width: 320rem;
+  height: 400rem;
+  /*border: 1px dotted white;*/
+  position: absolute;
+  margin-top: 230rem;
 }
 
-.splash-button {
-  width: 100%;
-  height: 40%;
-  margin-bottom: 15%;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 1px 2px #848e9e;
+.button {
+  width: 94%;
+  height: 30%;
+  /*border: 1px dashed white;*/
+  position: relative;
+  left: 10rem;
+  margin-top: 10rem;
+  text-align: center;
 }
 
-.splash-button:hover {
-  box-shadow: inset 0 0 1px 2px #848e9e;
-}
-
-.btn-3 {
-  margin-bottom: 8%;
-}
-
-.transport-type {
-  margin: 0;
+.button img {
   height: 90%;
   width: auto;
+  margin-top: 2.5%;
+  /*border: 1rem solid red;*/
+  border-radius: 55rem;
 }
 
-/* Taxi Route */
-
-.price {
-  display: flex;
-  align-self: center;
-  font-size: 3rem;
-  font-family: 'Prata', serif;
-  color: white;
-  margin-top: 15%;
+img:hover {
+  box-shadow: 2rem 2rem 10rem 2rem black;
 }
 
-.gett-button {
-  display: flex;
-  align-self: center;
-  align-items: center;
-  margin-top: 10%;
-  width: 60%;
-  height: 15%;
-  background-color: white;
-  justify-content: center;
-  box-shadow: 0 0 1px 2px #848e9e;
-}
-
-.gett-button:hover {
-  box-shadow: inset 0 0 1px 2px #848e9e;
-}
-
-.taxi-img {
-  height: 90%;
-  width: auto;
-}
-
-/* Car Route */
-
+/* Map Container */
 .map-container {
-  width: 85%;
-  height: 65%;
-  margin-top: 10%;
-  display: flex;
-  align-self: center;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  box-shadow: inset 0 0 1px 2px #848e9e;
+  width: 420rem;
+  height: 500rem;
+  position: absolute;
+  top: 150rem;
+  box-shadow: inset 0 0 6rem 4rem;
+  box-sizing: content-box;
+}
+
+.map-border {
+  width: 412rem;
+  height: 492rem;
+  position: relative;
+  overflow: auto;
+  margin: 4rem 0 0 4rem;
+  box-sizing: content-box;
 }
 
 #mapid {
-  height: 98%;
-  width: 98%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Directions Container */
+.directions-container {
+  width: 470rem;
+  height: 850rem;
+  position: absolute;
+  box-sizing: content-box;
+  overflow: auto;
+}
+
+.directions-container img {
+  width: auto;
+  height: 100%;
+  position: relative;
+  border: 0px;
+  border-radius: 0px;
+  margin-top: 0;
+}
+
+/* Footer */
+.controls-container {
+  width: 448rem;
+  height: 60rem;
+  position: absolute;
+  bottom: 30rem;
+  box-sizing: content-box;
+}
+
+.back-button {
+  width: 12%;
+  height: 85%;
+  position: relative;
+  margin: 5rem 0 5rem 5rem;
+}
+
+.back-button img {
+  height: 100%;
+  width: auto;
+  margin: 0;
+  border-radius: 55rem;
+}
+
+.next-button {
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  margin: -50rem 0 0 165rem;
+  font-size: 24em;
+  text-align: center;
+  padding-top: 12rem;
+  color: white;
+  background-color: #0c052d;
+  /*box-shadow: 0 0 10rem 1rem #4e5f82;*/
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.next-button:hover {
+  box-shadow: 2rem 2rem 5rem 1rem black;
 }
