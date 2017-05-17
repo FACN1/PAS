@@ -30,7 +30,11 @@ setTimeout(() => {
     if (err) {
       return err;
     }
-    for (let i = 0; i < corrds.length - 1;) {
+    const direction = corrds.geometry.coordinates;
+
+    // the steps const is turn by turn instructions for the route
+    // const steps = corrds.legs[0].steps;
+    for (let i = 0; i < direction.length - 1;) {
       if (i === 0) {
         L.marker([corrds[i][1], corrds[i][0]]).addTo(mymap);
       }
