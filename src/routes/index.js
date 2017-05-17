@@ -3,6 +3,8 @@ const staticHandler = require('./static.js');
 const taxiHandler = require('./taxi.js');
 const carHandler = require('./car.js');
 const busHandler = require('./bus.js');
+const mapHandler = require('./map.js');
+
 
 module.exports = [
   homeHandler,
@@ -10,4 +12,5 @@ module.exports = [
   taxiHandler,
   carHandler,
   busHandler,
+  mapHandler,
 ];
