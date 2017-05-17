@@ -36,10 +36,10 @@ setTimeout(() => {
     // const steps = corrds.legs[0].steps;
     for (let i = 0; i < direction.length - 1;) {
       if (i === 0) {
-        L.marker([corrds[i][1], corrds[i][0]]).addTo(mymap);
+        L.marker([direction[i][1], direction[i][0]]).addTo(mymap);
       }
-      const pointA = new L.LatLng(corrds[i][1], corrds[i][0]);
-      const pointB = new L.LatLng(corrds[i += 1][1], corrds[i][0]);
+      const pointA = new L.LatLng(direction[i][1], direction[i][0]);
+      const pointB = new L.LatLng(direction[i += 1][1], direction[i][0]);
       const pointList = [pointA, pointB];
 
       const firstpolyline = new L.Polyline(pointList, {
@@ -48,8 +48,8 @@ setTimeout(() => {
       });
       firstpolyline.addTo(mymap);
 
-      if (i === corrds.length - 1) {
-        L.marker([corrds[i][1], corrds[i][0]]).addTo(mymap);
+      if (i === direction.length - 1) {
+        L.marker([direction[i][1], direction[i][0]]).addTo(mymap);
       }
     }
     return 1;
