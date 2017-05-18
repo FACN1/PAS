@@ -6,7 +6,7 @@
 }
 
 html {
-  font-size: 1px;
+  font-size: 6%;
 }
 
 .app-shell {
@@ -203,9 +203,9 @@ img:hover {
 .controls-container {
   width: 90%;
   right: 5%;
-  height: 60rem;
+  height: 7%;
   position: absolute;
-  bottom: 30rem;
+  bottom: 4%;
   box-sizing: content-box;
   /*border: 1px solid white;*/
 }
@@ -229,8 +229,8 @@ img:hover {
 .next-button {
   width: 25%;
   height: 85%;
-  position: relative;
-  margin: -13% 0 0 38.5%;
+  position: absolute;
+  margin: -12.5% 0 0 38.5%;
   font-size: 24em;
   text-align: center;
   padding-top: 3%;
@@ -241,5 +241,5 @@ img:hover {
 }
 
 .next-button:hover {
-  box-shadow: 2rem 2rem 5rem 1rem black;
+  box-shadow: 2px 2px 5px 1px black;
 }
