@@ -6,7 +6,7 @@
 }
 
 html {
-  font-size: 6%;
+  font-size: 8%;
 }
 
 .app-shell {
@@ -72,8 +72,9 @@ html {
 .call-button {
   width: auto;
   height: 50%;
-  position: relative;
-  margin: -23% 0 0 88%;
+  position: absolute;
+  top: 0%;
+  right: 0%;
   /*border: 1px dashed white;*/
   border-radius: 50%;
 }
@@ -211,9 +212,9 @@ img:hover {
 }
 
 .back-button {
-  width: 12%;
+  width: auto;
   height: 85%;
-  position: relative;
+  position: absolute;
   margin: 1% 0 1% 1%;
   border-radius: 50%;
 }
@@ -222,22 +223,24 @@ img:hover {
   height: 100%;
   width: auto;
   margin: 0;
-  border-radius: 55rem;
-  padding: 2rem;
+  border-radius: 50%;
+  padding: 3%;
 }
 
 .next-button {
   width: 25%;
   height: 85%;
   position: absolute;
-  margin: -12.5% 0 0 38.5%;
+  bottom: 0%;
+  right: 35%;
   font-size: 24em;
   text-align: center;
-  padding-top: 3%;
+  padding-top: 4rem;
   color: white;
   background-color: #0c052d;
   /*box-shadow: 0 0 10rem 1rem #4e5f82;*/
   font-family: 'Roboto Condensed', sans-serif;
+  /*border: 1px solid white;*/
 }
 
 .next-button:hover {
