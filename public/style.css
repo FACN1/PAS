@@ -23,6 +23,7 @@ html {
 
 /* Header */
 .header {
+  z-index: 1;
   width: 430rem;
   height: 100rem;
   margin-top: 20rem;
@@ -68,6 +69,7 @@ html {
   height: 55rem;
   position: absolute;
   margin: -114rem 0 0 380rem;
+  border-radius: 55rem;
 }
 
 .call-button img {
@@ -146,6 +148,30 @@ img:hover {
   height: 100%;
 }
 
+/* Taxi View */
+.taxi-container {
+  width: 320rem;
+  height: 400rem;
+  /*border: 1px dotted white;*/
+  position: absolute;
+  margin-top: 230rem;
+  border: 1px dashed white;
+}
+
+.taxi-price {
+  width: 94%;
+  height: 30%;
+  /*border: 1px dashed white;*/
+  position: relative;
+  left: 10rem;
+  margin-top: 10rem;
+  text-align: center;
+  color: white;
+  font-size: 48rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding-top: 10%;
+}
+
 /* Directions Container */
 .directions-container {
   width: 470rem;
@@ -178,6 +204,7 @@ img:hover {
   height: 85%;
   position: relative;
   margin: 5rem 0 5rem 5rem;
+  border-radius: 55rem;
 }
 
 .back-button img {
@@ -185,13 +212,14 @@ img:hover {
   width: auto;
   margin: 0;
   border-radius: 55rem;
+  padding: 2rem;
 }
 
 .next-button {
-  width: 200%;
-  height: 100%;
+  width: 25%;
+  height: 85%;
   position: absolute;
-  margin: -50rem 0 0 165rem;
+  margin: -58rem 0 0 168rem;
   font-size: 24em;
   text-align: center;
   padding-top: 12rem;

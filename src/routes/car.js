@@ -1,6 +1,9 @@
 const data = {
   title: 'Private Parking',
   tagLine: 'ElMutran Parking',
+  nextLink: '/walk',
+  nextText: 'ARRIVED',
+  backLink: '/',
 };
 
 module.exports = {
