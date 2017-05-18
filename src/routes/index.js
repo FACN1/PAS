@@ -4,6 +4,8 @@ const taxiHandler = require('./taxi.js');
 const carHandler = require('./car.js');
 const busHandler = require('./bus.js');
 const walkingHandler = require('./walking.js');
+const mapHandler = require('./map.js');
+
 
 module.exports = [
   homeHandler,
@@ -12,4 +14,5 @@ module.exports = [
   carHandler,
   busHandler,
   walkingHandler,
+  mapHandler,
 ];
