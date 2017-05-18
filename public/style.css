@@ -6,7 +6,7 @@
 }
 
 html {
-  font-size: 2px;
+  font-size: 1px;
 }
 
 .app-shell {
@@ -17,8 +17,8 @@ html {
   /*%absolute or viewport absolute or fixed*/
   display: flex;
   display: -webkit-flex;
-  -webkit-align-items: center;
-  align-items: center;
+  /*-webkit-align-items: center;
+  align-items: center;*/
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   flex-direction: column;
@@ -28,67 +28,71 @@ html {
 /* Header */
 .header {
   z-index: 1;
-  width: 430rem;
-  height: 100rem;
-  margin-top: 20rem;
+  width: 90%;
+  height: 12%;
+  margin: 5%;
   position: absolute;
   box-sizing: content-box;
   /*border: 1px dashed white;*/
 }
 
 .title {
-  width: 300rem;
-  height: 43rem;
+  width: 80%;
+  height: 50%;
   position: relative;
-  margin: 5rem 0 0 5rem;
+  margin: 1% 0 0 1%;
   font-size: 48em;
   color: white;
   font-family: 'Economica', sans-serif;
   font-weight:600;
+  /*border: 1px dashed white;*/
 }
 
 .line-break {
-  width: 420rem;
+  width: 98%;
   height: 1px;
   background-color: white;
   position: relative;
-  left: 5rem;
-  margin: 10rem 0 5rem 0;
+  margin: 1%;
 }
 
 .tag-line {
-  width: 210rem;
-  height: 43rem;
+  width: 33%;
+  height: 33%;
   position: relative;
-  margin: 0 5rem 5rem 215rem;
+  margin: 0 1% 1% 66%;
   font-size: 22em;
   text-align: right;
   color: white;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: lighter;
+  /*border: 1px dotted white;*/
 }
 
 .call-button {
-  width: 55rem;
-  height: 55rem;
-  position: absolute;
-  margin: -114rem 0 0 380rem;
-  border-radius: 55rem;
+  width: auto;
+  height: 50%;
+  position: relative;
+  margin: -23% 0 0 88%;
+  /*border: 1px dashed white;*/
+  border-radius: 50%;
 }
 
 .call-button img {
   height: 100%;
   width: auto;
-  border-radius: 55rem;
+  border-radius: 50%;
 }
 
 /* Welcome */
 .welcome-container {
-  width: 380rem;
+  width: 80%;
   position: absolute;
-  margin-top: 140rem;
+  margin-top: 35%;
+  margin-left: 10%;
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
+  /*border: 1px dotted white;*/
 }
 
 .welcome-paragraph {
@@ -98,11 +102,12 @@ html {
 
 /* Splash Buttons */
 .button-container {
-  width: 320rem;
-  height: 400rem;
+  width: 70%;
+  height: 55%;
   /*border: 1px dotted white;*/
   position: absolute;
-  margin-top: 230rem;
+  margin-top: 50%;
+  margin-left: 15%;
 }
 
 .button {
@@ -110,8 +115,8 @@ html {
   height: 30%;
   /*border: 1px dashed white;*/
   position: relative;
-  left: 10rem;
-  margin-top: 10rem;
+  left: 3%;
+  margin-top: 3%;
   text-align: center;
 }
 
@@ -120,11 +125,11 @@ html {
   width: auto;
   margin-top: 2.5%;
   /*border: 1rem solid red;*/
-  border-radius: 55rem;
+  border-radius: 50%;
 }
 
 img:hover {
-  box-shadow: 2rem 2rem 10rem 2rem black;
+  box-shadow: 2px 2px 10px 2px black;
 }
 
 /* Map Container */
