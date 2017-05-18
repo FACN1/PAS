@@ -235,12 +235,15 @@ img:hover {
   right: 35%;
   font-size: 24em;
   text-align: center;
-  padding-top: 4rem;
   color: white;
   background-color: #0c052d;
   /*box-shadow: 0 0 10rem 1rem #4e5f82;*/
   font-family: 'Roboto Condensed', sans-serif;
   /*border: 1px solid white;*/
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
 }
 
 .next-button:hover {
