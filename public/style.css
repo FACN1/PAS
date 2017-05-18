@@ -6,7 +6,7 @@
 }
 
 html {
-  font-size: 10%;
+  font-size: 12%;
 }
 
 .app-shell {
@@ -240,10 +240,7 @@ img:hover {
   /*box-shadow: 0 0 10rem 1rem #4e5f82;*/
   font-family: 'Roboto Condensed', sans-serif;
   /*border: 1px solid white;*/
-  display: flex;
-  display: -webkit-flex;
-  justify-content: center;
-  -webkit-justify-content: center;
+  padding-top: 2%;
 }
 
 .next-button:hover {
