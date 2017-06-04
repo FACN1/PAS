@@ -60,3 +60,10 @@ setTimeout(() => {
     console.log(`${e.latlng.lat} + ' , ' + ${e.latlng.lng}`);
   });
 }, 1);
+
+// Change out walking image;
+const WalkingDir = document.querySelector('.walking-img');
+
+WalkingDir.addEventListener('click', () => {
+  WalkingDir.src = './images/arrow.png';
+});
