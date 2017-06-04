@@ -2,13 +2,13 @@ const data = {
   title: 'PAS',
   tagLine: 'Park & Sleep',
   welcomeA: 'Welcome!',
-  welcomeB: 'How will you be arriving?',
+  welcomeB: 'Please select your guesthouse:',
 };
 
 module.exports = {
   method: 'GET',
-  path: '/method',
+  path: '/',
   handler: (request, reply) => {
-    reply.view('splash', data);
+    reply.view('guesthouse', data);
   },
 };

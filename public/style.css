@@ -9,6 +9,10 @@ html {
   font-size: 12%;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
@@ -135,6 +139,14 @@ html {
   margin-top: 2.5%;
   /*border: 1rem solid red;*/
   border-radius: 50%;
+}
+
+.button div {
+  height: 90%;
+  width: auto;
+  margin-top: 10%;
+  color: white;
+  font-size: 30rem;
 }
 
 img:hover {
