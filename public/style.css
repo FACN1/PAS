@@ -6,7 +6,15 @@
 }
 
 html {
-  font-size: 1px;
+  font-size: 12%;
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  html {
+    font-size: 6%;
+  }
 }
 
 .app-shell {
@@ -16,75 +24,84 @@ html {
   position: absolute;
   /*%absolute or viewport absolute or fixed*/
   display: flex;
-  align-items: center;
+  display: -webkit-flex;
+  /*-webkit-align-items: center;
+  align-items: center;*/
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+  -webkit-flex-direction: column;
 }
 
 /* Header */
 .header {
   z-index: 1;
-  width: 430rem;
-  height: 100rem;
-  margin-top: 20rem;
+  width: 90%;
+  height: 12%;
+  margin: 5%;
   position: absolute;
   box-sizing: content-box;
   /*border: 1px dashed white;*/
 }
 
 .title {
-  width: 300rem;
-  height: 43rem;
+  width: 80%;
+  height: 50%;
   position: relative;
-  margin: 5rem 0 0 5rem;
+  margin: 1% 0 0 1%;
   font-size: 48em;
   color: white;
   font-family: 'Economica', sans-serif;
   font-weight:600;
+  /*border: 1px dashed white;*/
 }
 
 .line-break {
-  width: 420rem;
+  width: 98%;
   height: 1px;
   background-color: white;
   position: relative;
-  left: 5rem;
-  margin: 10rem 0 5rem 0;
+  margin: 1%;
 }
 
 .tag-line {
-  width: 210rem;
-  height: 43rem;
+  width: 40%;
+  height: 33%;
   position: relative;
-  margin: 0 5rem 5rem 215rem;
+  margin: 0 1% 1% 60%;
   font-size: 22em;
   text-align: right;
   color: white;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: lighter;
+  /*border: 1px dotted white;*/
 }
 
 .call-button {
-  width: 55rem;
-  height: 55rem;
+  width: auto;
+  height: 50%;
   position: absolute;
-  margin: -114rem 0 0 380rem;
-  border-radius: 55rem;
+  top: 0%;
+  right: 0%;
+  /*border: 1px dashed white;*/
+  border-radius: 50%;
 }
 
 .call-button img {
   height: 100%;
   width: auto;
-  border-radius: 55rem;
+  border-radius: 50%;
 }
 
 /* Welcome */
 .welcome-container {
-  width: 380rem;
+  width: 80%;
   position: absolute;
-  margin-top: 140rem;
+  margin-top: 35%;
+  margin-left: 10%;
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
+  /*border: 1px dotted white;*/
 }
 
 .welcome-paragraph {
@@ -94,11 +111,12 @@ html {
 
 /* Splash Buttons */
 .button-container {
-  width: 320rem;
-  height: 400rem;
+  width: 70%;
+  height: 55%;
   /*border: 1px dotted white;*/
   position: absolute;
-  margin-top: 230rem;
+  margin-top: 50%;
+  margin-left: 15%;
 }
 
 .button {
@@ -106,8 +124,8 @@ html {
   height: 30%;
   /*border: 1px dashed white;*/
   position: relative;
-  left: 10rem;
-  margin-top: 10rem;
+  left: 3%;
+  margin-top: 3%;
   text-align: center;
 }
 
@@ -116,29 +134,30 @@ html {
   width: auto;
   margin-top: 2.5%;
   /*border: 1rem solid red;*/
-  border-radius: 55rem;
+  border-radius: 50%;
 }
 
 img:hover {
-  box-shadow: 2rem 2rem 10rem 2rem black;
+  box-shadow: 2px 2px 10px 2px black;
 }
 
 /* Map Container */
 .map-container {
-  width: 420rem;
-  height: 500rem;
+  width: 90%;
+  height: 60.5%;
   position: absolute;
-  top: 150rem;
-  box-shadow: inset 0 0 6rem 4rem;
+  top: 18%;
+  box-shadow: inset 0 0 6px 4px;
   box-sizing: content-box;
+  right: 5%;
 }
 
 .map-border {
-  width: 412rem;
-  height: 492rem;
+  width: 98%;
+  height: 98%;
   position: relative;
   overflow: auto;
-  margin: 4rem 0 0 4rem;
+  margin: 4px 0 0 4px;
   box-sizing: content-box;
 }
 
@@ -150,11 +169,11 @@ img:hover {
 
 /* Taxi View */
 .taxi-container {
-  width: 320rem;
-  height: 400rem;
-  /*border: 1px dotted white;*/
+  width: 70%;
+  height: 50%;
   position: absolute;
-  margin-top: 230rem;
+  margin-top: 50%;
+  right: 15%;
   border: 1px dashed white;
 }
 
@@ -174,15 +193,14 @@ img:hover {
 
 /* Directions Container */
 .directions-container {
-  width: 470rem;
-  height: 850rem;
+  width: auto;
+  height: 100%;
   position: absolute;
   box-sizing: content-box;
-  overflow: auto;
 }
 
 .directions-container img {
-  width: auto;
+  width: 100%;
   height: 100%;
   position: relative;
   border: 0px;
@@ -192,43 +210,47 @@ img:hover {
 
 /* Footer */
 .controls-container {
-  width: 448rem;
-  height: 60rem;
+  width: 90%;
+  right: 5%;
+  height: 7%;
   position: absolute;
-  bottom: 30rem;
+  bottom: 4%;
   box-sizing: content-box;
+  /*border: 1px solid white;*/
 }
 
 .back-button {
-  width: 12%;
+  width: auto;
   height: 85%;
-  position: relative;
-  margin: 5rem 0 5rem 5rem;
-  border-radius: 55rem;
+  position: absolute;
+  margin: 1% 0 1% 1%;
+  border-radius: 50%;
 }
 
 .back-button img {
   height: 100%;
   width: auto;
   margin: 0;
-  border-radius: 55rem;
-  padding: 2rem;
+  border-radius: 50%;
+  padding: 3%;
 }
 
 .next-button {
   width: 25%;
   height: 85%;
   position: absolute;
-  margin: -58rem 0 0 168rem;
+  bottom: 0%;
+  right: 35%;
   font-size: 24em;
   text-align: center;
-  padding-top: 12rem;
   color: white;
   background-color: #0c052d;
   /*box-shadow: 0 0 10rem 1rem #4e5f82;*/
   font-family: 'Roboto Condensed', sans-serif;
+  /*border: 1px solid white;*/
+  padding-top: 2%;
 }
 
 .next-button:hover {
-  box-shadow: 2rem 2rem 5rem 1rem black;
+  box-shadow: 2px 2px 5px 1px black;
 }
