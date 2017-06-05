@@ -150,6 +150,7 @@ a {
   font-family: 'Roboto Condensed', sans-serif;
   border: 1px solid white;
   padding-top: 12%;
+  box-shadow: 2px 2px;
 }
 
 img:hover {
@@ -205,7 +206,7 @@ img:hover {
   height: 30%;
   /*border: 1px dashed white;*/
   position: relative;
-  left: 10rem;
+  left: 2rem;
   margin-top: 10rem;
   text-align: center;
   color: white;

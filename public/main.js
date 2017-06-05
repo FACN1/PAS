@@ -57,6 +57,7 @@ if (mapPath.includes('car') || mapPath.includes('bus')) {
 
       const stepText = document.querySelector('.step-text');
       stepText.innerHTML = steps[0].maneuver.instruction;
+      return 1;
     });
 
       // this code will be deleted when we get the cordds for the parking lot and   // bus station
