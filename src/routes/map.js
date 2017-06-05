@@ -13,7 +13,7 @@ module.exports = {
         steps: true,
         alternatives: true,
         geometries: 'geojson',
-        overview: 'full',
+        overview: 'simplified',
       },
       (err, results) => {
         reply(JSON.stringify(results.routes[0]));

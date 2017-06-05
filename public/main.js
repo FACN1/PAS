@@ -34,7 +34,8 @@ if (mapPath.includes('car') || mapPath.includes('bus')) {
       const direction = corrds.geometry.coordinates;
 
       // the steps const is turn by turn instructions for the route
-      // const steps = corrds.legs[0].steps;
+      const steps = corrds.legs[0].steps;
+
       for (let i = 0; i < direction.length - 1;) {
         if (i === 0) {
           L.marker([direction[i][1], direction[i][0]]).addTo(mymap);
@@ -53,7 +54,9 @@ if (mapPath.includes('car') || mapPath.includes('bus')) {
           L.marker([direction[i][1], direction[i][0]]).addTo(mymap);
         }
       }
-      return 1;
+
+      const stepText = document.querySelector('.step-text');
+      stepText.innerHTML = steps[0].maneuver.instruction;
     });
 
       // this code will be deleted when we get the cordds for the parking lot and   // bus station
