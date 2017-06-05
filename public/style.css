@@ -147,6 +147,9 @@ a {
   margin-top: 10%;
   color: white;
   font-size: 30rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  border: 1px solid white;
+  padding-top: 12%;
 }
 
 img:hover {
